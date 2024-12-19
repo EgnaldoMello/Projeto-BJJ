@@ -48,7 +48,7 @@ header nav a{
     width: 80px;
     height: 35px;
     border-radius: 10px;
-    background-color:red;
+    background-color:#F60909;
     position: absolute;
     left: -16px;
     top: -7px;
@@ -57,4 +57,88 @@ header nav a{
 .botao-nav:hover{
     transform: scale(1.2);
     cursor: pointer;
+}
+header a:hover{
+    transform: scale(1.1);
+}
+
+/*1º parte da main*/
+.main-1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 660px;
+    font-family: "Kaushan Script";
+}
+.main-1 img{
+    width: 600px;
+    height: 400px;
+    margin-top: 60px;
+    margin-left: 130px;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+    animation: scale 8s ease-in-out infinite;
+}
+@keyframes scale {
+    50%{
+        transform: scale(1.04);
+    }
+}
+.mat{
+    font-size: 55px;
+    display: grid;
+    height: min-content;
+}
+.mat h1{
+    margin-right: 130px;
+    margin-top: 60px;
+    
+}
+.mat a{
+    text-decoration: none;
+    margin-top: 50px;
+    position: relative;
+    color: #F60909;
+    width: 400px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: .3s;
+}
+.mat a:hover{
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #141313;
+    border: none;
+}
+.mat a::after{
+    content: "";
+    width: 404px;
+    height: 104px;
+    border-radius: 0px 0px 0px 10px;
+    background-color: #F60909;
+    position: absolute;
+    z-index: -1;
+    left: -100px;
+    top: 100%;
+}
+.mat a:hover::after{
+    animation: desloca .5s;
+    left: 0px;
+    top: 0px;
+}
+@keyframes desloca {
+    0% {
+        left: -100px;
+        top: 100%;   
+    }
+    50% {
+        left: 15%;
+        top: -25%;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
 }
