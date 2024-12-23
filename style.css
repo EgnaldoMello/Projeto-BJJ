@@ -42,6 +42,7 @@ header nav a{
     background: none;
     position: relative;
     z-index: 1;
+    transition: .6s;
 }    
 .botao-nav::before{
     content: "";
@@ -66,7 +67,7 @@ header a:hover{
 .main-1{
     display: grid;
     grid-template-columns: 60% 40%;
-    height: 660px;
+    height: 760px;
     font-family: "Kaushan Script";
 }
 .main-1 img{
@@ -124,7 +125,7 @@ header a:hover{
     top: 100%;
 }
 .mat a:hover::after{
-    animation: desloca .5s;
+    animation: desloca .9s;
     left: 0px;
     top: 0px;
 }
@@ -141,4 +142,131 @@ header a:hover{
         left: 0px;
         top: 0px;
     }
+}
+
+/*2º parte da main*/
+.main-2{
+    position: relative;
+    background-color: #141313;
+    height: 760px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.icone1 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -35px;
+    left: 47.5%;
+}
+.parte1main2 {
+    margin-left: 130px;
+    margin-top: 120px;
+}
+.parte1main2 img{
+    width: 480px;
+    height: 300px;
+    border-radius: 20px;
+    position: absolute;
+}
+.setae{
+    content: " ";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    border-left: 10px solid transparent ;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #4A2929;
+    top: 260px;
+    rotate: -90deg;
+}
+.setad{
+    content: " ";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    border-left: 10px solid transparent ;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #4A2929;
+    top: 260px;
+    left: 590px; 
+    rotate: 90deg;
+}
+.parte1main2 p{
+    position: absolute;
+    color: white;
+    font-family: "Nunito";
+    font-size: 30px;
+    line-height: 55px;
+    top: 480px;
+    width: 35%;
+    text-align: center;
+}
+.marcacao{
+    background-color: #F60909;
+    border-radius: 15px;
+    padding: 0px 8px;
+    font-weight: bold;
+}
+.parte1main2::after{
+    content: " ";
+    width: 6px;
+    height: 516px;
+    left: 670px;
+    background-color:white;
+    position: absolute;
+}
+.parte2main2 {
+    font-family: "Nunito";
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: grid;
+    height: min-content;
+    margin-top: 120px;
+}
+.parte2main2 h1{
+    font-family: "Kaushan Script";
+    font-size: 55px;
+    font-weight: 400;
+    grid-column: span 2;
+    justify-self: center;
+    align-self: center;
+    color: #F60909;
+}
+.meiodia-noite{
+    display: flex;
+    justify-content: center;
+    grid-column: span 2;
+    gap: 80px;
+    margin-top: 20px;
+}
+.lista-horarios{
+    display: flex;
+    margin-top: 60px;
+    line-height: 1.8;
+}
+.lista-semana{
+    padding-left: 100px;
+    padding-right: 20px;
+}
+.lista-semana p{
+    position: relative;
+}
+.lista-meiodia{
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.lista-noite{
+    padding-left: 100px ;
+}
+.lista-semana p::before{
+    content: " ";
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #F60909;
+    position: absolute;
+    top: 18px;
+    left: -60px;
 }
