@@ -67,7 +67,7 @@ header a:hover{
 .main-1{
     display: grid;
     grid-template-columns: 60% 40%;
-    height: 760px;
+    height: 660px;
     font-family: "Kaushan Script";
 }
 .main-1 img{
@@ -269,4 +269,84 @@ header a:hover{
     position: absolute;
     top: 18px;
     left: -60px;
+}
+
+/*3º parte da main*/
+.main-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main-3 h2{
+    font-family: "Kaushan Script";
+    font-size: 35px;
+    margin-top: 50px;
+    font-weight: 600;
+    margin-left: 130px;
+    text-align: center;
+    justify-self: start;
+    height: min-content;
+}
+.icone2 {
+    width: 100px;
+    height: 80px;
+    margin-top: 20px;
+    justify-self: center;
+    grid-column: span 2;
+}
+.main-3 ul{
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Nunito";
+    margin-left: 130px;
+    margin-top: 50px;
+    gap: 30px;
+}
+.imagem3{
+    border-radius: 500px;
+    width: 560px;
+    height: 560px;
+    grid-row: 2;
+    grid-column: 2/3;
+    margin-bottom: 100px;
+}
+.main-3 h3{
+    width:fit-content;
+    padding: 10px 15px 10px 45px;
+    background-color: #F60909;
+    color: white;
+    border-radius: 15px;
+    position: relative;
+}
+.main-3 h3::before{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+}
+
+/*footer*/
+footer{
+    background-color: black;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 0;
+}
+footer p{
+    color: white;
+    font-family: "Nunito";
+    font-size: 25px;
+    justify-self: center;
+    align-self: center;
+}
+footer img{
+    width: 35px;
+    height: 35px;
+    justify-self: right;
+    align-self: center;
+    margin-right: 130px;
 }
