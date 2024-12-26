@@ -169,28 +169,36 @@ header a:hover{
     border-radius: 20px;
     position: absolute;
 }
+.frente {
+    z-index: 1;
+}
 .setae{
     content: " ";
     display: block;
     position: absolute;
-    z-index: 1;
     border-left: 10px solid transparent ;
     border-right: 10px solid transparent;
-    border-bottom: 15px solid #4A2929;
+    border-bottom: 15px solid white;
     top: 260px;
+    left: 100px;
     rotate: -90deg;
 }
 .setad{
     content: " ";
     display: block;
     position: absolute;
-    z-index: 1;
     border-left: 10px solid transparent ;
     border-right: 10px solid transparent;
-    border-bottom: 15px solid #4A2929;
+    border-bottom: 15px solid white;
     top: 260px;
-    left: 590px; 
+    left: 620px; 
     rotate: 90deg;
+}
+.setae:hover, .setad:hover{
+    cursor: pointer;
+}
+.frente{
+    z-index: 1;
 }
 .parte1main2 p{
     position: absolute;
@@ -366,4 +374,27 @@ footer img{
     transition: 1.6s;
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+.girar {
+    animation: giro 2.5s;
+}
+@keyframes giro {
+    from {
+        transform: rotate(0deg);
+    } 
+    to {
+        transform: rotate(360deg);
+    }
+}
+.saltar {
+    animation: salto 1.3s;
+}
+@keyframes salto {
+    0% {
+        transform: scale(1);
+    } 50% {
+        transform: scale(2);
+    } 100% {
+        transform: scale(1);
+    }
 }
